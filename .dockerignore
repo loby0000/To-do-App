@@ -1,0 +1,7 @@
+# Ignorar node_modules y archivos innecesarios
+deploy/
+node_modules
+npm-debug.log
+dist
+.DS_Store
+*.md

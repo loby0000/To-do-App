@@ -1,0 +1,442 @@
+/* Este archivo ha sido dividido en main.css, login.css, register.css y tasks.css */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+    color: #222;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(60, 72, 88, 0.15);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2.7em;
+    color: #3b82f6;
+    letter-spacing: 1px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  form input,
+  form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: #f1f5f9;
+    transition: border 0.2s;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border: 1.5px solid #3b82f6;
+    outline: none;
+    background: #fff;
+  }
+  
+  form button {
+    padding: 10px 18px;
+    font-size: 1em;
+    color: #fff;
+    background: #3b82f6;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  form button:hover {
+    background: #2563eb;
+  }
+  
+  /* Tareas */
+  .task-form-section {
+    margin-bottom: 30px;
+  }
+  
+  #task-form {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(59, 130, 246, 0.08);
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    transition: box-shadow 0.2s;
+  }
+  
+  #task-form input,
+  #task-form textarea {
+    width: 100%;
+    max-width: 600px;
+    background: #f1f5f9;
+    border: 1.5px solid #e0e7ef;
+    border-radius: 8px;
+    font-size: 1.08em;
+    padding: 14px 16px;
+    box-sizing: border-box;
+  }
+  
+  #task-form input:focus,
+  #task-form textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px #3b82f655;
+  }
+  
+  #save-task-btn {
+    width: 200px;
+    padding: 12px 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    background: linear-gradient(90deg, #3b82f6 60%, #2563eb 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  #save-task-btn:hover {
+    background: linear-gradient(90deg, #2563eb 60%, #3b82f6 100%);
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.13);
+    transform: translateY(-2px) scale(1.03);
+  }
+  
+  #task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #task-list li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #task-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Tabla */
+  .task-table-section {
+    overflow-x: auto;
+  }
+  
+  .task-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f9fafb;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .task-table th,
+  .task-table td {
+    padding: 14px 10px;
+    text-align: center;
+  }
+  
+  .task-table th {
+    background: #3b82f6;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .task-table tr {
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .task-table tr:last-child {
+    border-bottom: none;
+  }
+  
+  tr.completed {
+    background: #d1fae5 !important;
+  }
+  
+  /* Estados */
+  .status-completed {
+    background: #22c55e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .status-pending {
+    background: #f59e42;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  /* Botones editar/eliminar */
+  .edit-btn {
+    background: #facc15;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .edit-btn:hover {
+    background: #fde047;
+  }
+  
+  .delete-btn {
+    background: #ef4444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .delete-btn:hover {
+    background: #dc2626;
+  }
+  
+  /* Secciones */
+  #auth-section,
+  #tasks-section {
+    margin-bottom: 20px;
+  }
+  
+  #auth-section form,
+  #tasks-section form {
+    margin-bottom: 20px;
+  }
+  
+  #auth-section h2,
+  #tasks-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  #auth-section input,
+  #tasks-section input,
+  #tasks-section textarea {
+    margin-bottom: 10px;
+  }
+  
+  /* Logout */
+  #logout-button {
+    margin-top: 30px;
+    padding: 10px 24px;
+    background: #ef4444;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  #logout-button:hover {
+    background: #b91c1c;
+  }
+  
+  /* Modal */
+  #modal-bg {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  #modal-edit {
+    display: none;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(60, 72, 88, 0.25);
+    padding: 32px 28px 24px;
+    z-index: 1010;
+    min-width: 320px;
+  }
+  #modal-edit h2 {
+    margin-top: 0;
+    color: #3b82f6;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  #modal-edit input,
+  #modal-edit textarea {
+    width: 80%;
+    margin: 0 auto 14px;
+    display: block;
+  }
+  #modal-edit button {
+    margin-right: 8px;
+    padding: 7px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95em;
+    cursor: pointer;
+  }
+  #modal-edit .save-modal-btn {
+    background: #3b82f6;
+    color: #fff;
+  }
+  #modal-edit .cancel-modal-btn {
+    background: #64748b;
+    color: #fff;
+  }
+  #modal-edit .save-modal-btn:hover {
+    background: #2563eb;
+  }
+  #modal-edit .cancel-modal-btn:hover {
+    background: #334155;
+  }
+  
+  /* Barra superior */
+  .top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px 10px;
+    box-sizing: border-box;
+  }
+  
+  .todo-title {
+    margin: 0;
+    font-size: 2.1em;
+    color: #3b82f6;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+  
+  /* Form con iconos */
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .form-group i {
+    margin-right: 10px;
+    color: #555;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    header h1,
+    .todo-title {
+      font-size: 2em;
+      text-align: center;
+    }
+  
+    .top-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    #logout-button {
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    #task-form input,
+    #task-form textarea,
+    #modal-edit input,
+    #modal-edit textarea {
+      width: 100%;
+    }
+  
+    .task-table th,
+    .task-table td {
+      padding: 10px;
+      font-size: 0.9em;
+    }
+  
+    .form-group {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .form-group i {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1,
+    .todo-title {
+      font-size: 1.5em;
+    }
+  
+    form button,
+    #save-task-btn,
+    #logout-button {
+      font-size: 0.9em;
+      padding: 10px;
+      width: 100%;
+    }
+  
+    .form-group {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .form-group i {
+      margin-bottom: 5px;
+    }
+  
+    .task-table th,
+    .task-table td {
+      padding: 8px;
+      font-size: 0.8em;
+    }
+  
+    #modal-edit {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    #modal-edit input,
+    #modal-edit textarea {
+      width: 100%;
+    }
+  }

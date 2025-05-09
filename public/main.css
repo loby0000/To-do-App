@@ -1,0 +1,61 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px 30px 20px 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(60, 72, 88, 0.15);
+}
+
+h1, h2 {
+  font-family: inherit;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+input, textarea, button {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #e0e7ff;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+/* Responsive general */
+@media (max-width: 900px) {
+  .container {
+    max-width: 98vw;
+    padding: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    padding: 6vw 2vw;
+    border-radius: 10px;
+  }
+  h1, h2 {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    padding: 2vw 1vw;
+  }
+  h1, h2 {
+    font-size: 1em;
+  }
+}

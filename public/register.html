@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="register.css">
+  <!-- Font Awesome para los íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-user-plus"></i> Registro</h1>
+    </header>
+    <main>
+      <form id="register-form" class="register-form-custom">
+        <div class="input-icon-group">
+          <span class="input-icon">&#128100;</span>
+          <input type="text" id="register-username" placeholder="Usuario" required>
+        </div>
+        <div class="input-icon-group">
+          <span class="input-icon">&#128231;</span>
+          <input type="email" id="register-email" placeholder="Correo electrónico" required>
+        </div>
+        <div class="input-icon-group">
+          <span class="input-icon">&#128274;</span>
+          <input type="password" id="register-password" placeholder="Contraseña" required>
+        </div>
+        <button type="submit" class="register-btn-custom">Registrarse</button>
+      </form>
+      <p>¿Ya tienes una cuenta? <span class="login-icon">&#128274;</span> <a href="login.html">Inicia sesión aquí</a>.</p>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

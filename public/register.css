@@ -1,0 +1,103 @@
+.register-form-custom {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(59,130,246,0.08);
+  padding: 32px 24px 24px 24px;
+  margin: 40px auto 0 auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.input-icon-group {
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  border: 1.5px solid #e0e7ef;
+  border-radius: 8px;
+  padding: 0 10px;
+  margin-bottom: 0;
+}
+.input-icon {
+  font-size: 1.2em;
+  color: #3b82f6;
+  margin-right: 8px;
+}
+.register-form-custom input {
+  border: none;
+  background: transparent;
+  padding: 14px 8px;
+  font-size: 1.08em;
+  width: 100%;
+  outline: none;
+}
+.register-form-custom input:focus {
+  background: #fff;
+}
+.register-btn-custom {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  background: linear-gradient(90deg, #3b82f6 60%, #2563eb 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(59,130,246,0.10);
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+.register-btn-custom:hover {
+  background: linear-gradient(90deg, #2563eb 60%, #3b82f6 100%);
+  box-shadow: 0 4px 16px rgba(59,130,246,0.13);
+  transform: translateY(-2px) scale(1.03);
+}
+.login-icon {
+  color: #3b82f6;
+  font-size: 1.1em;
+  margin-right: 2px;
+}
+.register-title {
+  text-align: center;
+  font-size: 2.3em;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+.register-footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 1.08em;
+}
+.register-footer a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.register-footer a:hover {
+  color: #3b82f6;
+}
+@media (max-width: 600px) {
+  .register-form-custom {
+    max-width: 98vw;
+    padding: 18px 6vw 18px 6vw;
+    gap: 14px;
+  }
+  .input-icon-group {
+    padding: 0 4px;
+  }
+  .register-btn-custom {
+    font-size: 1em;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 400px) {
+  .register-form-custom {
+    padding: 10px 2vw;
+  }
+  .register-btn-custom {
+    font-size: 0.95em;
+    padding: 8px 0;
+  }
+}

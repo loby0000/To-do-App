@@ -69,7 +69,7 @@ const swaggerOptions = {
       description: 'Documentación de la API para la gestión de tareas',
     },
   },
-  apis: ['./**/*.js'], // Escanear todos los archivos .js en el proyecto
+  apis: ['./routes/mySwaggerFile.js'], // Escanear todos los archivos .js en el proyecto
 };
 
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
